@@ -2,6 +2,7 @@ backend:
   name: github
   repo: optimizedbydavid/obd-site
   branch: main
+  site_domain: spontaneous-lebkuchen-44f86d.netlify.app
 
 media_folder: static/images
 public_folder: /images
