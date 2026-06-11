@@ -14,8 +14,8 @@ paginate = 10
   ShowShareButtons = false
 
 [params.homeInfoParams]
-  Title = "Optimized by David"
-  Content = "Gear picks, life advice, and recommendations from someone who's already done the research."
+  Title = "Notes from the perch"
+  Content = "Professional rabbit hole explorer"
 
 [[params.socialIcons]]
   name = "youtube"

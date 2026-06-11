@@ -1,0 +1,39 @@
+{{- define "main" }}
+
+{{- if (and .Site.Params.homeInfoParams (eq .Paginator.PageNumber 1)) }}
+{{- partial "home_info.html" . }}
+{{- end }}
+
+<div class="home-categories">
+  <h2>Browse by category</h2>
+  <div class="category-tiles">
+    <a href="/tags/gear/" class="category-tile">
+      <h3>Gear</h3>
+      <p>Recommendations that have earned their place</p>
+    </a>
+    <a href="/tags/money/" class="category-tile">
+      <h3>Money</h3>
+      <p>Credit cards, investing, frameworks</p>
+    </a>
+    <a href="/tags/lifestyle/" class="category-tile">
+      <h3>Lifestyle</h3>
+      <p>Vanlife, travel, optimization</p>
+    </a>
+    <a href="/tags/hobbies/" class="category-tile">
+      <h3>Hobbies</h3>
+      <p>3D printing, MTG, projects</p>
+    </a>
+  </div>
+</div>
+
+{{- if (and .Site.Params.homeInfoParams (eq .Paginator.PageNumber 1)) }}
+<h2 style="color: var(--brass); font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em; margin: 48px 0 24px 0;">Recent posts</h2>
+{{- end }}
+
+{{- range .Paginator.Pages }}
+{{- partial "post_entry.html" . }}
+{{- end }}
+
+{{- partial "paginator.html" . }}
+
+{{- end }}{{/* end main */}}

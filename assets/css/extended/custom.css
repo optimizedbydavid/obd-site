@@ -1,0 +1,139 @@
+:root {
+    --theme: #161B22;
+    --entry: #1F2733;
+    --primary: #E6E9EF;
+    --secondary: #8B95A5;
+    --tertiary: #2A3441;
+    --content: #E6E9EF;
+    --code-block-bg: #0F1419;
+    --code-bg: #2A3441;
+    --border: #2A3441;
+    --accent: #A8C5E0;
+    --brass: #D4B896;
+}
+
+.dark {
+    --theme: #161B22;
+    --entry: #1F2733;
+    --primary: #E6E9EF;
+    --secondary: #8B95A5;
+    --tertiary: #2A3441;
+    --content: #E6E9EF;
+    --code-block-bg: #0F1419;
+    --code-bg: #2A3441;
+    --border: #2A3441;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+    background: var(--theme);
+}
+
+.logo a {
+    color: var(--brass) !important;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    color: var(--brass);
+}
+
+.post-entry {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    transition: all 0.2s ease;
+}
+
+.post-entry:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.entry-header h2 {
+    color: var(--primary);
+}
+
+.first-entry .entry-content,
+.entry-content {
+    color: var(--secondary);
+}
+
+.post-tags li a {
+    background: var(--tertiary);
+    color: var(--brass);
+    border: 1px solid var(--border);
+}
+
+.post-tags li a:hover {
+    background: var(--accent);
+    color: var(--theme);
+}
+
+.main {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.header {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.nav {
+    padding: 16px 0;
+}
+
+/* Category tiles */
+.category-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin: 48px 0;
+}
+
+.category-tile {
+    background: var(--entry);
+    border: 1px solid var(--border);
+    padding: 32px 24px;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.category-tile:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+
+.category-tile h3 {
+    color: var(--brass);
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.category-tile p {
+    color: var(--secondary);
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Hero refinement */
+.first-entry .entry-content {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--secondary);
+}
+
+.first-entry .entry-header h1 {
+    color: var(--primary);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
