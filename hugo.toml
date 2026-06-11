@@ -1,0 +1,44 @@
+baseURL = "https://optimizedbydavid.com/"
+languageCode = "en-us"
+title = "Optimized by David"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  description = "Gear, advice, and recommendations — already optimized."
+  author = "David"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+
+[params.homeInfoParams]
+  Title = "Optimized by David"
+  Content = "Gear picks, life advice, and recommendations from someone who's already done the research."
+
+[[params.socialIcons]]
+  name = "youtube"
+  url = "https://youtube.com/@OptimizedByDavid"
+
+[[params.socialIcons]]
+  name = "instagram"
+  url = "https://instagram.com/OptimizedByDavid"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
+  [[menu.main]]
+    name = "Search"
+    url = "/search/"
+    weight = 3

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Optimized by David</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Optimized by David</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jun 2026 17:05:08 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Post</title>
+      <link>http://localhost:1313/posts/test-post/</link>
+      <pubDate>Wed, 10 Jun 2026 17:05:08 -0700</pubDate>
+      <guid>http://localhost:1313/posts/test-post/</guid>
+      <description>&lt;p&gt;This is my first post. Here&amp;rsquo;s a product I recommend:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://amazon.com/dp/XXXXX?tag=yourtag-20&#34;&gt;Check it out on Amazon&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
